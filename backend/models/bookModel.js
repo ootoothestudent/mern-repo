@@ -1,7 +1,7 @@
  const mongoose = require ('mongoose')
  const bookSchema = mongoose.Schema({
-text:{type: String,
-    required:[true, 'PLease add text value']},
+
+
     title: {
                 type: String
         
