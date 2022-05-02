@@ -12,12 +12,12 @@ const getBooks = asyncHandler(async (req, res )=> {
 // //@route POST/api/book
 // //@acess Prives after auth 
 const createBook = asyncHandler(async(req, res )=> {
-      if(!req.body.title){
+      if(!req.body.title){   //tile will be searched uppon change this later
           res.status(400)
            //error handeling 
           throw new Error('please add title field');}
         const book = await Book.create ({
-                        title: req.body.title,
+                        title: req.body.title,         
                         author: req.body.author,
                         isbn: req.body.isbn,
                         author: req.body.author,
